@@ -17,8 +17,6 @@
 
 namespace AuroraExtensions\MagentoCronCloudFunctions\Helper;
 
-use Magento\Framework\App\Config\ScopeConfigInterface;
-
 class Cron extends Data
 {
     /**
@@ -35,5 +33,13 @@ class Cron extends Data
         $project = $this->getGoogleCloudProjectName();
 
         return 'https://' . $region . '-' . $project . Dict::GCF_BASE_URI;
+    }
+
+    /**
+     * Get URL for triggering endpoint via HTTP.
+     */
+    public function getEndpointUrl($pathname = '/')
+    {
+        return $this->getEndpointBaseUri() . $pathname;
     }
 }
