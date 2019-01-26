@@ -11,7 +11,7 @@
  * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
  *
  * @package       AuroraExtensions_MagentoCronCloudFunctions
- * @copyright     Copyright (C) 2019 Nickolas Burr <nickolasburr@gmail.com>
+ * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 
