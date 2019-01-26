@@ -17,8 +17,6 @@
 
 namespace AuroraExtensions\MagentoCronCloudFunctions\Model\Cron;
 
-use AuroraExtensions\MagentoCronCloudFunctions\Helper\Dict;
-
 class Job implements JobInterface
 {
     /** @property string $jobCode */
