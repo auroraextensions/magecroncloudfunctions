@@ -40,7 +40,7 @@
                 <field id="cloud_functions_region" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Cloud Functions Region</label>
                     <comment>The region where the cloud function was created.</comment>
-                    <source_model>AuroraExtensions\MagentoCronCloudFunctions\Model\System\Config\Source\Select\Region</source_model>
+                    <source_model>AuroraExtensions\MagentoCronCloudFunctions\Model\Config\Source\Select\Region</source_model>
                 </field>
                 <field id="auth_token" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Authentication Token</label>
