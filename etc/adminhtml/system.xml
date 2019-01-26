@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * system.xml
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ *
+ * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
+ * @license       MIT License
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="auroraextensions" translate="label" sortOrder="1000">
+            <label>Aurora Extensions</label>
+        </tab>
+
+        <section id="magentocroncloudfunctions" translate="label" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
+            <class>separator-top</class>
+            <label>Magento Cron Cloud Functions</label>
+            <tab>auroraextensions</tab>
+            <resource>AuroraExtensions_MagentoCronCloudFunctions::configuration</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>General Settings</label>
+                <field id="enable_module" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enable Magento Cron Cloud Functions</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="gcp_project" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Google Cloud Platform Project</label>
+                    <comment>The name of the GCP project.</comment>
+                </field>
+                <field id="cloud_functions_region" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Cloud Functions Region</label>
+                    <comment>The region where the cloud function was created.</comment>
+                    <source_model>AuroraExtensions\MagentoCronCloudFunctions\Model\System\Config\Source\Select\Region</source_model>
+                </field>
+                <field id="auth_token" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Authentication Token</label>
+                    <comment>Alphanumeric token. Minimum 32 characters.</comment>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
