@@ -32,14 +32,20 @@ class Cron extends Data
         /** @var string $project */
         $project = $this->getGoogleCloudProjectName();
 
-        return 'https://' . $region . '-' . $project . Dict::GCF_BASE_URI;
+        return 'https://' . $region . '-' . $project . '.' . Dict::GCF_BASE_URI;
     }
 
     /**
      * Get URL for triggering endpoint via HTTP.
+     *
+     * @param string $pathname
+     * @return string
      */
     public function getEndpointUrl($pathname = '/')
     {
+        /* Trim leading slashes from pathname. */
+        $pathname = '/' . \ltrim($pathname, '/');
+
         return $this->getEndpointBaseUri() . $pathname;
     }
 }
