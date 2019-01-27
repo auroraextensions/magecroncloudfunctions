@@ -43,6 +43,9 @@ class Cron extends Data
      */
     public function getEndpointUrl($pathname = '/')
     {
+        /* Trim leading slashes from pathname. */
+        $pathname = '/' . \ltrim($pathname, '/');
+
         return $this->getEndpointBaseUri() . $pathname;
     }
 }
