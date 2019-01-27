@@ -86,8 +86,8 @@ class Request
         $this->httpRequest->setMethod(HttpRequest::METHOD_POST);
 
         $this->httpClient->setOptions([
-            'adapter'      => 'Zend\Http\Client\Adapter\Curl',
-            'timeout'      => 30,
+            'adapter' => 'Zend\Http\Client\Adapter\Curl',
+            'timeout' => 30,
         ]);
 
         $this->httpClient->send($this->httpRequest);
