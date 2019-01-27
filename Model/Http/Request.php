@@ -25,7 +25,6 @@ use Zend\Http\Client as HttpClient;
 use Zend\Http\Headers as HttpHeaders;
 use Zend\Http\Request as HttpRequest;
 use Zend\Http\Response as HttpResponse;
-use Zend\Stdlib\Parameters;
 
 class Request
 {
@@ -77,7 +76,7 @@ class Request
         $endpointUrl = $this->cronHelper->getEndpointUrl($this->cronJob->getJobCode());
 
         $this->httpHeaders->addHeaders([
-            'Accept' => 'application/json',
+            'Accept'       => 'application/json',
             'Content-Type' => 'application/json',
         ]);
 
