@@ -17,18 +17,25 @@
 
 namespace AuroraExtensions\MagentoCronCloudFunctions\Model\Cron;
 
+use Zend\Http\Request as HttpRequest;
+
 class Job implements JobInterface
 {
     /** @property string $jobCode */
     protected $jobCode;
 
+    /** @property string $httpMethod */
+    protected $httpMethod;
+
     /**
      * @param string $jobCode
+     * @param string|null $httpMethod
      * @return void
      */
-    public function __construct($jobCode)
+    public function __construct($jobCode, $httpMethod = null)
     {
         $this->jobCode = $jobCode;
+        $this->httpMethod = $httpMethod ?? HttpRequest::METHOD_POST;
     }
 
     /**
@@ -39,5 +46,15 @@ class Job implements JobInterface
     public function getJobCode()
     {
         return $this->jobCode;
+    }
+
+    /**
+     * Get HTTP method used for trigger.
+     *
+     * @return string
+     */
+    public function getHttpMethod()
+    {
+        return $this->httpMethod;
     }
 }
