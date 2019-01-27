@@ -23,4 +23,9 @@ interface JobInterface
      * @return string
      */
     public function getJobCode();
+
+    /**
+     * @return string
+     */
+    public function getHttpMethod();
 }

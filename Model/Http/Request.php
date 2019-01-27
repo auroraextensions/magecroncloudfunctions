@@ -82,10 +82,10 @@ class Request
 
         $this->httpRequest->setHeaders($this->httpHeaders);
         $this->httpRequest->setUri($endpointUrl);
-        $this->httpRequest->setMethod(HttpRequest::METHOD_POST);
+        $this->httpRequest->setMethod($this->cronJob->getHttpMethod());
 
         $this->httpClient->setOptions([
-            'adapter' => 'Zend\Http\Client\Adapter\Curl',
+            'adapter' => HttpClient\Adapter\Curl::class,
             'timeout' => 30,
         ]);
 
