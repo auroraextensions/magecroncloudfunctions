@@ -21,7 +21,7 @@ class Dict
 {
     /** @constant GCF_BASE_URI */
     /** @constant GCF_DEFAULT_REGION */
-    const GCF_BASE_URI = '.cloudfunctions.net';
+    const GCF_BASE_URI = 'cloudfunctions.net';
     const GCF_DEFAULT_REGION = 'us-central1';
 
     /** @constant XML_PATH_FIELD_GENERAL_ENABLE_MODULE */
