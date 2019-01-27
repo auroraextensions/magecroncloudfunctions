@@ -18,4 +18,4 @@ Using Google Cloud Functions to run Magento cron jobs can have significant benef
 + Reduced memory and CPU consumption
 + Improved horizontal scaling
 + Inexpensive resource usage
-+ Ability to decouple job scheduler via integration with [Google Cloud Scheduler](https://cloud.google.com/scheduler/)
++ Ability to decouple job scheduler via [Google Cloud Scheduler](https://cloud.google.com/scheduler/)
