@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * phpunit.xml.dist
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the MIT License, which
+ * is bundled with this package in the file LICENSE.txt.
+ *
+ * It is also available on the Internet at the following URL:
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ *
+ * @package       NickolasBurr_MagentoCronCloudFunctions
+ * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
+ * @license       MIT License
+ */
+-->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://schema.phpunit.de/6.2/phpunit.xsd"
+         beStrictAboutTestsThatDoNotTestAnything="false"
+         bootstrap="./framework/bootstrap.php"
+         colors="true"
+         stderr="true"
+>
+    <!-- Test suites definition -->
+    <testsuites>
+        <testsuite name="Magento Cron Cloud Functions Unit Tests">
+            <directory suffix="Test.php">../../../vendor/auroraextensions/magentocroncloudfunctions/Test/Unit</directory>
+        </testsuite>
+    </testsuites>
+
+    <!-- Code coverage filters -->
+    <filter>
+        <whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">../../../vendor/auroraextensions/magentocroncloudfunctions</directory>
+            <exclude>
+                <directory>../../../vendor/auroraextensions/magentocroncloudfunctions/Test</directory>
+            </exclude>
+        </whitelist>
+    </filter>
+
+    <!-- PHP INI settings and constants definitions -->
+    <php>
+        <includePath>.</includePath>
+        <includePath>testsuite</includePath>
+        <ini name="date.timezone" value="America/New_York"/>
+        <ini name="xdebug.max_nesting_level" value="100"/>
+    </php>
+
+    <!-- Test listeners -->
+    <listeners>
+        <listener class="Magento\Framework\TestFramework\Unit\Listener\ReplaceObjectManager"/>
+    </listeners>
+</phpunit>
