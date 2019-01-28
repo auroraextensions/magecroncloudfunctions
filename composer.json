@@ -10,6 +10,10 @@
       "email": "nickolasburr@gmail.com"
     }
   ],
+  "support": {
+    "email": "support@auroraextensions.com",
+    "issues": "https://github.com/auroraextensions/magentocroncloudfunctions/issues"
+  },
   "require": {
     "php": ">=7.1"
   },
