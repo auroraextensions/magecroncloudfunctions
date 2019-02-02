@@ -24,6 +24,12 @@ class Headers implements HeadersInterface
     /** @property HttpHeaders $httpHeaders */
     protected $httpHeaders;
 
+    /** @property array $defaultHeaders */
+    public static $defaultHeaders = [
+        'Accept'       => 'application/json',
+        'Content-Type' => 'application/json',
+    ];
+
     /**
      * @param HttpHeaders $httpHeaders
      * @return void
