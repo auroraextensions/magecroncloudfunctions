@@ -39,12 +39,22 @@ class Headers implements HeadersInterface
     }
 
     /**
+     * Return Zend\Http\Headers instance.
+     *
+     * @return HttpHeaders
+     */
+    public function getHttpHeaders(): HttpHeaders
+    {
+        return $this->httpHeaders;
+    }
+
+    /**
      * Set HTTP headers.
      *
      * @param array $headers
      * @param $this
      */
-    public function addHeaders(array $headers = [])
+    public function addHttpHeaders(array $headers = [])
     {
         $this->httpHeaders->addHeaders($headers);
 
