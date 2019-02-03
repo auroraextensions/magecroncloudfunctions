@@ -17,11 +17,18 @@
 
 namespace AuroraExtensions\MagentoCronCloudFunctions\Model\Http;
 
+use Zend\Http\Headers as HttpHeaders;
+
 interface HeadersInterface
 {
     /**
      * @param array $headers
      * @return $this
      */
-    public function addHeaders(array $headers);
+    public function addHttpHeaders(array $headers);
+
+    /**
+     * @return Zend\Http\Headers
+     */
+    public function getHttpHeaders(): HttpHeaders;
 }
