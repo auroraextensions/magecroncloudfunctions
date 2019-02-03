@@ -83,8 +83,8 @@ abstract class AbstractRequest extends DataObject implements RequestInterface
      */
     public function setHeaders(array $headers = [])
     {
-        $this->headers->addHeaders($headers);
-        $this->request->setHeaders($this->headers);
+        $this->headers->addHttpHeaders($headers);
+        $this->request->setHeaders($this->headers->getHttpHeaders());
 
         return $this;
     }
