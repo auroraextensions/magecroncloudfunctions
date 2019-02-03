@@ -114,4 +114,11 @@ abstract class AbstractRequest extends DataObject implements RequestInterface
 
         return $this;
     }
+
+    /**
+     * Execute request action.
+     *
+     * @return void
+     */
+    abstract public function execute();
 }

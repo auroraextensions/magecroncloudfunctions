@@ -29,5 +29,5 @@ interface TransportInterface
      * @param RequestInterface $request
      * @return $this
      */
-    public function sendRequest(RequestInterface $request);
+    public function send(RequestInterface $request);
 }
