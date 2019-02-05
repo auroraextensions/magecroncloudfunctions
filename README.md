@@ -9,7 +9,7 @@ Run Magento 2 cron jobs via [Google Cloud Functions](https://cloud.google.com/fu
 
 ## Documentation
 
-See [here](https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/latest/) for documentation.
+See [here](https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/latest/) for documentation.
 
 ## Features
 

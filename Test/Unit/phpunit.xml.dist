@@ -9,9 +9,9 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       NickolasBurr_MagentoCronCloudFunctions
+ * @package       NickolasBurr_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -26,16 +26,16 @@
     <!-- Test suites definition -->
     <testsuites>
         <testsuite name="Magento Cron Cloud Functions Unit Tests">
-            <directory suffix="Test.php">../../../vendor/auroraextensions/magentocroncloudfunctions/Test/Unit</directory>
+            <directory suffix="Test.php">../../../vendor/auroraextensions/magecroncloudfunctions/Test/Unit</directory>
         </testsuite>
     </testsuites>
 
     <!-- Code coverage filters -->
     <filter>
         <whitelist addUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">../../../vendor/auroraextensions/magentocroncloudfunctions</directory>
+            <directory suffix=".php">../../../vendor/auroraextensions/magecroncloudfunctions</directory>
             <exclude>
-                <directory>../../../vendor/auroraextensions/magentocroncloudfunctions/Test</directory>
+                <directory>../../../vendor/auroraextensions/magecroncloudfunctions/Test</directory>
             </exclude>
         </whitelist>
     </filter>

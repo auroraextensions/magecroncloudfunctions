@@ -9,17 +9,17 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @package       AuroraExtensions_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 -->
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
-    <preference for="AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\JobInterface" type="AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\Job"/>
-    <preference for="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\HeadersInterface" type="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Headers"/>
-    <preference for="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\RequestInterface" type="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request"/>
-    <preference for="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\TransportInterface" type="AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Transport"/>
+    <preference for="AuroraExtensions\MageCronCloudFunctions\Model\Cron\JobInterface" type="AuroraExtensions\MageCronCloudFunctions\Model\Cron\Job"/>
+    <preference for="AuroraExtensions\MageCronCloudFunctions\Model\Http\HeadersInterface" type="AuroraExtensions\MageCronCloudFunctions\Model\Http\Headers"/>
+    <preference for="AuroraExtensions\MageCronCloudFunctions\Model\Http\RequestInterface" type="AuroraExtensions\MageCronCloudFunctions\Model\Http\Request"/>
+    <preference for="AuroraExtensions\MageCronCloudFunctions\Model\Http\TransportInterface" type="AuroraExtensions\MageCronCloudFunctions\Model\Http\Transport"/>
 </config>

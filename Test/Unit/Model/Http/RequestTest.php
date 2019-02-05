@@ -8,19 +8,19 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @package       AuroraExtensions_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 
-namespace AuroraExtensions\MagentoCronCloudFunctions\Test\Unit\Model\Http;
+namespace AuroraExtensions\MageCronCloudFunctions\Test\Unit\Model\Http;
 
-use AuroraExtensions\MagentoCronCloudFunctions\Helper\Cron as CronHelper;
-use AuroraExtensions\MagentoCronCloudFunctions\Helper\Dict;
-use AuroraExtensions\MagentoCronCloudFunctions\Model\Cron\JobInterface;
-use AuroraExtensions\MagentoCronCloudFunctions\Model\Http\Request;
+use AuroraExtensions\MageCronCloudFunctions\Helper\Cron as CronHelper;
+use AuroraExtensions\MageCronCloudFunctions\Helper\Dict;
+use AuroraExtensions\MageCronCloudFunctions\Model\Cron\JobInterface;
+use AuroraExtensions\MageCronCloudFunctions\Model\Http\Request;
 
 use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 use PHPUnit\Framework\TestCase;

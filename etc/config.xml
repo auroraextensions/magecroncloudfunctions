@@ -9,9 +9,9 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @package       AuroraExtensions_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -19,13 +19,13 @@
 
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
     <default>
-        <magentocroncloudfunctions>
+        <magecroncloudfunctions>
             <general>
                 <enable_module>0</enable_module>
                 <gcp_project></gcp_project>
                 <cloud_functions_region>us-central1</cloud_functions_region>
                 <auth_token></auth_token>
             </general>
-        </magentocroncloudfunctions>
+        </magecroncloudfunctions>
     </default>
 </config>
