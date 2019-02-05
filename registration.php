@@ -8,9 +8,9 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @package       AuroraExtensions_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
@@ -19,6 +19,6 @@ use \Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'AuroraExtensions_MagentoCronCloudFunctions',
+    'AuroraExtensions_MageCronCloudFunctions',
     __DIR__
 );

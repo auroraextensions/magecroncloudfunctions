@@ -8,14 +8,14 @@
  * is bundled with this package in the file LICENSE.txt.
  *
  * It is also available on the Internet at the following URL:
- * https://docs.auroraextensions.com/magento/extensions/2.x/magentocroncloudfunctions/LICENSE.txt
+ * https://docs.auroraextensions.com/magento/extensions/2.x/magecroncloudfunctions/LICENSE.txt
  *
- * @package       AuroraExtensions_MagentoCronCloudFunctions
+ * @package       AuroraExtensions_MageCronCloudFunctions
  * @copyright     Copyright (C) 2019 Aurora Extensions <support@auroraextensions.com>
  * @license       MIT License
  */
 
-namespace AuroraExtensions\MagentoCronCloudFunctions\Model\Http;
+namespace AuroraExtensions\MageCronCloudFunctions\Model\Http;
 
 class Request extends AbstractRequest implements RequestInterface
 {
